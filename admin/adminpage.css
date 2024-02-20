@@ -1,0 +1,10 @@
+.data{
+    border : 1px solid black;
+    margin: 5rem 1rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+h1{
+    color: skyblue;
+}

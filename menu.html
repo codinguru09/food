@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Restaurano</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link type="image/x-icon" href="images/fav-icon.png" rel="icon">
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+	<div class="sb-preloader">
+		<div class="sb-preloader-bg"></div>
+		<div class="sb-preloader-body">
+			<div class="sb-loading">
+				<div class="sb-percent"><span class="sb-preloader-number" data-count="101">00</span><span>%</span></div>
+			</div>
+			<div class="sb-loading-bar">
+				<div class="sb-bar"></div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-4 col-lg-3 col-md-4 col-12">
+					<div class="header-logo">
+						<a href="index.html"><img src="images/logo.png" alt="Brand Logo"></a>
+					</div>
+				</div>
+				<div class="col-xl-8 col-lg-9 col-md-8 col-12">
+					<div class="main-menu align-items-center">
+						<div class="sidemenu-overlay"></div>
+						<div class="menu">
+							<div class="sidemenu-header">
+								<div class="sidemenu-logo">
+									<img src="images/sidemenu-logo.png" alt="Brand Logo">
+								</div>
+								<div class="sidemenu-close">
+									<span></span>
+								</div>
+							</div>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="active"><a href="menu.html">Menu</a></li>
+								<li class="has-child-iteam">
+									<a href="javascript:void(0)">Shop</a>
+									<ul>
+										<li><a href="shop-list.html">Shop List</a></li>
+										<li><a href="shop-detail.html">Shop Detail</a></li>
+										<li><a href="cart.html">Cart</a></li>
+										<li><a href="checkout.html">Checkout</a></li>
+									</ul>
+								</li>
+								<li class="has-child-iteam">
+									<a href="javascript:void(0)">Pages</a>
+									<ul>
+										<li><a href="about-us.html">About Us</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="team.html">Team</a></li>
+										<li><a href="book-now.html">Book Now</a></li>
+										<li><a href="faq.html">FAQ</a></li>
+										<li><a href="404.html">404</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="register.html">Register</a></li>
+									</ul>
+								</li>
+								<li class="has-child-iteam">
+									<a href="javascript:void(0)">Blog</a>
+									<ul>
+										<li><a href="blog-right.html">Blog Right</a></li>
+										<li><a href="blog-left.html">Blog Left</a></li>
+										<li><a href="blog-grid.html">Blog Grid</a></li>
+										<li><a href="blog-detail.html">Blog Detail</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+						<div class="menu-icon">
+							<ul>
+								<li class="header-search"><a href="javascript:void(0)"><img src="images/search.png"
+											class="transition" alt="Search Icon"></a></li>
+								<li class="admin-user"><a href="login.html"><img src="images/user.png"
+											class="transition" alt="User Icon"></a></li>
+								<li class="cart">
+									<a href="javascript:void(0)" class="cart-link"><img src="images/cart.png"
+											class="transition" alt="Cart Icon"><span class="count">0</span></a>
+									<div class="cart-menu">
+										<ul class="cart-listing">
+											<li>
+												<div class="item-content">
+													<a href="shop-detail.html" class="item-img"><img
+															src="images/recipe-2.jpg" alt="Item Image"
+															class="transition"></a>
+													<div class="item-text">
+														<a href="shop-detail.html" class="item-title">Fast Platter</a>
+														<span class="sprice">$66.70</span>
+														<div class="quantity">
+															<label>Qty:</label>
+															<input type="number" name="quantity" class="form-control"
+																value="1" min="1" max="10">
+														</div>
+													</div>
+												</div>
+												<a href="#" class="remove-item">×</a>
+											</li>
+											<li>
+												<div class="item-content">
+													<a href="shop-detail.html" class="item-img"><img
+															src="images/recipe-3.jpg" alt="Item Image"
+															class="transition"></a>
+													<div class="item-text">
+														<a href="shop-detail.html" class="item-title">Special Poha</a>
+														<span class="sprice">$65.77</span>
+														<div class="quantity">
+															<label>Qty:</label>
+															<input type="number" name="quantity" class="form-control"
+																value="1" min="1" max="10">
+														</div>
+													</div>
+												</div>
+												<a href="#" class="remove-item">×</a>
+											</li>
+											<li>
+												<div class="item-content">
+													<a href="shop-detail.html" class="item-img"><img
+															src="images/recipe-4.jpg" alt="Item Image"
+															class="transition"></a>
+													<div class="item-text">
+														<a href="shop-detail.html" class="item-title">Adana Kabab</a>
+														<span class="sprice">$75.88</span>
+														<div class="quantity">
+															<label>Qty:</label>
+															<input type="number" name="quantity" class="form-control"
+																value="1" min="1" max="10">
+														</div>
+													</div>
+												</div>
+												<a href="#" class="remove-item">×</a>
+											</li>
+										</ul>
+										<div class="sub-total">
+											<strong>Subtotal:</strong> <span class="sprice">$66.70</span>
+										</div>
+										<div class="cart-button">
+											<ul>
+												<li><a href="cart.html" class="button">View Cart</a></li>
+												<li><a href="checkout.html" class="button">Checkout</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="toggle-menu"><span></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search-popup">
+			<div class="search-popup-overlay transition"></div>
+			<div class="search-popup-inner">
+				<div class="container">
+					<form>
+						<div class="search-box">
+							<input type="text" name="search" class="form-control" placeholder="Search Here" required>
+							<button class="search-icon"><img src="images/search.png" class="transition"
+									alt="Search Icon"></button>
+							<a href="javascript:void(0)" class="close-search">×</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main id="main" class="main">
+
+		<section class="page-banner overflow-hidden">
+			<div class="banner-bg" style="background-image: url(images/sub-page-banner.png)"></div>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-8 col-lg-8 col-md-12">
+						<div class="page-banner-content wow fadeInLeft">
+							<h1 class="sub-page-title">Our Menu</h1>
+							<div class="sub-page-content">
+								<p>Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum
+									ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at,
+									neque.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-12">
+						<div class="breadcum wow fadeInRight">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>Menu</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="day-menu pt-100 pb-65">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="section-headding text-center pb-50">
+							<span class="sub-title text-uppercase wow fadeInUp">Delicious</span>
+							<h2 class="wow fadeInUp">Menus Of The Day</h2>
+						</div>
+					</div>
+
+					<div class="col-xl-12 col-lg-12 col-md-12 cus-tabs menu-tabs wow fadeInUp">
+						<ul class="cus-tabbing menu-tabbing">
+							<li data-filter="*" class="is-checked">All items</li>
+							<li data-filter=".starters">Starters</li>
+							<li data-filter=".maindishes">Main Dishes</li>
+							<li data-filter=".drinks">Drinks</li>
+							<li data-filter=".desserts">Desserts</li>
+						</ul>
+					</div>
+
+					<div class="col-xl-12 col-lg-12 col-md-12 wow fadeInUp">
+						<div class="row menu-grid">
+							<div class="col-xl-3 col-lg-4 col-md-4 menu-box starters">
+								<div class="recipe-slide">
+									<div class="recipe-img overflow-hidden">
+										<a href="shop-detail.html"><img src="images/menu-1.jpg" class="transition"
+												alt="Recipe Image"></a>
+										<div class="product-hover">
+											<a href="javascript:void(0)" class="button">Add to cart</a>
+										</div>
+									</div>
+									<div class="recipe-content">
+										<h6 class="recipe-title"><a href="shop-detail.html">Plain Sandwich</a></h6>
+										<p>A mighty meaty double helping of all the reasons you love</p>
+										<p class="price">$66.70</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 menu-box maindishes drinks">
+								<div class="recipe-slide">
+									<div class="recipe-img overflow-hidden">
+										<a href="shop-detail.html"><img src="images/menu-2.jpg" class="transition"
+												alt="Recipe Image"></a>
+										<div class="product-hover">
+											<a href="javascript:void(0)" class="button">Add to cart</a>
+										</div>
+									</div>
+									<div class="recipe-content">
+										<h6 class="recipe-title"><a href="shop-detail.html">Mixed Drink</a></h6>
+										<p>A mighty meaty double helping of all the reasons you love</p>
+										<p class="price">$65.77</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 menu-box drinks starters drinks">
+								<div class="recipe-slide">
+									<div class="recipe-img overflow-hidden">
+										<a href="shop-detail.html"><img src="images/menu-3.jpg" class="transition"
+												alt="Recipe Image"></a>
+										<div class="product-hover">
+											<a href="javascript:void(0)" class="button">Add to cart</a>
+										</div>
+									</div>
+									<div class="recipe-content">
+										<h6 class="recipe-title"><a href="shop-detail.html">Special Burger</a></h6>
+										<p>A mighty meaty double helping of all the reasons you love</p>
+										<p class="price">$75.88</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 menu-box desserts">
+								<div class="recipe-slide">
+									<div class="recipe-img overflow-hidden">
+										<a href="shop-detail.html"><img src="images/menu-4.jpg" class="transition"
+												alt="Recipe Image"></a>
+										<div class="product-hover">
+											<a href="javascript:void(0)" class="button">Add to cart</a>
+										</div>
+									</div>
+									<div class="recipe-content">
+										<h6 class="recipe-title"><a href="shop-detail.html">Adana Kabab</a></h6>
+										<p>A mighty meaty double helping of all the reasons you love</p>
+										<p class="price">$26.20</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 menu-box starters">
+								<div class="recipe-slide">
+									<div class="recipe-img overflow-hidden">
+										<a href="shop-detail.html"><img src="images/menu-5.jpg" class="transition"
+												alt="Recipe Image"></a>
+										<div class="product-hover">
+											<a href="javascript:void(0)" class="button">Add to cart</a>
+										</div>
+									</div>
+									<div class="recipe-content">
+										<h6 class="recipe-title"><a href="shop-detail.html">Fast Platter</a></h6>
+										<p>A mighty meaty double helping of all the reasons you love</p>
+										<p class="price">$46.12</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 menu-box maindishes">
+								<div class="recipe-slide">
+									<div class="recipe-img overflow-hidden">
+										<a href="shop-detail.html"><img src="images/menu-6.jpg" class="transition"
+												alt="Recipe Image"></a>
+										<div class="product-hover">
+											<a href="javascript:void(0)" class="button">Add to cart</a>
+										</div>
+									</div>
+									<div class="recipe-content">
+										<h6 class="recipe-title"><a href="shop-detail.html">Cheese Pizza</a></h6>
+										<p>A mighty meaty double helping of all the reasons you love</p>
+										<p class="price">$57.78</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 menu-box drinks">
+								<div class="recipe-slide">
+									<div class="recipe-img overflow-hidden">
+										<a href="shop-detail.html"><img src="images/menu-7.jpg" class="transition"
+												alt="Recipe Image"></a>
+										<div class="product-hover">
+											<a href="javascript:void(0)" class="button">Add to cart</a>
+										</div>
+									</div>
+									<div class="recipe-content">
+										<h6 class="recipe-title"><a href="shop-detail.html">Variety Drink</a></h6>
+										<p>A mighty meaty double helping of all the reasons you love</p>
+										<p class="price">$36.69</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-4 menu-box desserts">
+								<div class="recipe-slide">
+									<div class="recipe-img overflow-hidden">
+										<a href="shop-detail.html"><img src="images/menu-8.jpg" class="transition"
+												alt="Recipe Image"></a>
+										<div class="product-hover">
+											<a href="javascript:void(0)" class="button">Add to cart</a>
+										</div>
+									</div>
+									<div class="recipe-content">
+										<h6 class="recipe-title"><a href="shop-detail.html">Salad Fries</a></h6>
+										<p>A mighty meaty double helping of all the reasons you love</p>
+										<p class="price">$77.32</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="full-width-image right-image  overflow-hidden row bg-grey">
+			<div class="col-xl-6 col-lg-6 col-md-12 full-content-part ptb-100 wow fadeInLeft">
+				<div class="left-container">
+					<div class="section-headding">
+						<span class="sub-title text-uppercase">Festive special</span>
+						<h2>Burger With Benefits</h2>
+					</div>
+					<div class="full-width-content">
+						<p>Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh.
+							Etiam cursus leo vel metus. Aenean nec eros. Vestibu­lum ante ipsum primis in faucibus orci
+							luctus et ultrices.</p>
+						<p>This burger’s name explains itself. Of course, you can also top it with crisp lettuce,
+							tomatoes, ketchup, barbecue sauce and anything else.</p>
+					</div>
+					<a href="book-now.html" class="button">Book Now</a>
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-12 full-image-part wow fadeInRight">
+				<div class="full-image-box">
+					<img src="images/Our-Quality.jpg" alt="Our Quality">
+				</div>
+			</div>
+		</section>
+
+		<section class="full-width-image left-image  overflow-hidden row bg-grey">
+			<div class="col-xl-6 col-lg-6 col-md-12 full-image-part wow fadeInLeft order-t-2">
+				<div class="full-image-box">
+					<img src="images/Our-Quality-2.jpg" alt="Our Quality">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-12 full-content-part ptb-100 wow fadeInRight order-t-1">
+				<div class="right-container">
+					<div class="section-headding">
+						<span class="sub-title text-uppercase">Party special</span>
+						<h2>Mega Cheese Pizza</h2>
+					</div>
+					<div class="full-width-content">
+						<p>Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh.
+							Etiam cursus leo vel metus. Aenean nec eros. Vestibu­lum ante ipsum primis in faucibus orci
+							luctus et ultrices.</p>
+						<p>This burger’s name explains itself. Of course, you can also top it with crisp lettuce,
+							tomatoes, ketchup, barbecue sauce and anything else.</p>
+					</div>
+					<a href="book-now.html" class="button">Book Now</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="service-part overflow-hidden ptb-100">
+			<div class="container">
+				<div class="service-inner">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-12 wow fadeInLeft">
+							<div class="section-headding pb-35">
+								<span class="sub-title text-uppercase">Our Services</span>
+								<h2>As Fast As Than You Expect</h2>
+							</div>
+							<div class="row">
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="service-box">
+										<img src="images/Fast-Delivery.png" class="service-img" alt="Fast Delivery">
+										<h5 class="service-title">Fast Delivery</h5>
+										<p class="service-desc">Contrary to popular belief, Lorem Ipsum is not simply
+											random text. It has roots in a piece of classical Latin</p>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="service-box">
+										<img src="images/Limitless-Order.png" class="service-img" alt="Limitless Order">
+										<h5 class="service-title">Limitless Order</h5>
+										<p class="service-desc">Contrary to popular belief, Lorem Ipsum is not simply
+											random text. It has roots in a piece of classical Latin</p>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="service-box">
+										<img src="images/Premium-Quality.png" class="service-img" alt="Premium Quality">
+										<h5 class="service-title">Premium Quality</h5>
+										<p class="service-desc">Contrary to popular belief, Lorem Ipsum is not simply
+											random text. It has roots in a piece of classical Latin</p>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="service-box">
+										<img src="images/Always-Fresh.png" class="service-img" alt="Always Fresh">
+										<h5 class="service-title">Always Fresh</h5>
+										<p class="service-desc">Contrary to popular belief, Lorem Ipsum is not simply
+											random text. It has roots in a piece of classical Latin</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-12 wow fadeInRight">
+							<div class="service-imgs">
+								<div class="service-main-img">
+									<img src="images/service-1.jpg" alt="Service Image">
+									<div class="years-experience text-center">
+										<h3 class="year-count">10 +</h3>
+										<p class="year-text">Years Experience</p>
+									</div>
+								</div>
+								<div class="service-img-2">
+									<img src="images/service-2.jpg" alt="Service Image">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer wow fadeInUp">
+		<div class="container">
+			<div class="footer-inner ptb-100">
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-6 order-t-1">
+						<div class="footer-box-logo">
+							<a href="index.html" class="footer-logo"><img src="images/footer-logo.png"
+									alt="Brand Logo"></a>
+							<p>Lectus magna fringilla urna row porttitor rhoncus. Velit sed se ullamcorper morbio</p>
+							<ul class="social">
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 order-t-3">
+						<div class="footer-box">
+							<h6 class="footer-title text-uppercase">Opening Hours</h6>
+							<ul>
+								<li>Monday - Friday</li>
+								<li>10.00 AM - 11.00 PM</li>
+							</ul>
+						</div>
+						<div class="footer-box">
+							<h6 class="footer-title text-uppercase">Phone</h6>
+							<ul>
+								<li><a href="telto:+68123456789">(+68) 123 456 789</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 order-t-4">
+						<div class="footer-box">
+							<h6 class="footer-title text-uppercase">Address</h6>
+							<ul>
+								<li>570 8th Ave, New York, NY 10018 United States</li>
+							</ul>
+						</div>
+						<div class="footer-box">
+							<h6 class="footer-title text-uppercase">Email</h6>
+							<ul>
+								<li><a href="mailto:info@example.com">info@example.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 order-t-2">
+						<div class="footer-box newsletter-box">
+							<h6 class="footer-title text-uppercase">Newsletter</h6>
+							<form>
+								<div class="form-group">
+									<input type="text" name="text" class="form-control" placeholder="Email Address"
+										required>
+								</div>
+								<button class="button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="text-center">
+					<p>Restaurano all Rights Reserved. Designed By <a href="#">TemplatesCoder.com</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>

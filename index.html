@@ -1,0 +1,952 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Restaurano</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="image/x-icon" href="images/fav-icon.png" rel="icon">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+	<div class="sb-preloader">
+      	<div class="sb-preloader-bg"></div>
+      	<div class="sb-preloader-body">
+        	<div class="sb-loading">
+          		<div class="sb-percent"><span class="sb-preloader-number" data-count="101">00</span><span>%</span></div>
+        	</div>
+        	<div class="sb-loading-bar">
+          		<div class="sb-bar"></div>
+        	</div>
+      	</div>
+    </div>
+
+	<header class="header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-4 col-lg-3 col-md-4 col-12">
+					<div class="header-logo">
+						<a href="index.html"><img src="images/logo.png" alt="Brand Logo"></a>
+					</div>
+				</div>
+				<div class="col-xl-8 col-lg-9 col-md-8 col-12">
+					<div class="main-menu align-items-center">
+						<div class="sidemenu-overlay"></div>
+						<div class="menu">
+							<div class="sidemenu-header">
+								<div class="sidemenu-logo">
+									<img src="images/sidemenu-logo.png" alt="Brand Logo">
+								</div>
+								<div class="sidemenu-close">
+									<span></span>
+								</div>
+							</div>
+							<ul>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="menu.html">Menu</a></li>
+								<li class="has-child-iteam">
+									<a href="javascript:void(0)">Shop</a>
+									<ul>
+										<li><a href="shop-list.html">Shop List</a></li>
+										<li><a href="shop-detail.html">Shop Detail</a></li>
+										<li><a href="cart.html">Cart</a></li>
+										<li><a href="checkout.html">Checkout</a></li>
+									</ul>
+								</li>
+								<li class="has-child-iteam">
+									<a href="javascript:void(0)">Pages</a>
+									<ul>
+										<li><a href="about-us.html">About Us</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="team.html">Team</a></li>
+										<li><a href="book-now.html">Book Now</a></li>
+										<li><a href="faq.html">FAQ</a></li>
+										<li><a href="404.html">404</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="register.html">Register</a></li>
+									</ul>
+								</li>
+								<li class="has-child-iteam">
+									<a href="javascript:void(0)">Blog</a>
+									<ul>
+										<li><a href="blog-right.html">Blog Right</a></li>
+										<li><a href="blog-left.html">Blog Left</a></li>
+										<li><a href="blog-grid.html">Blog Grid</a></li>
+										<li><a href="blog-detail.html">Blog Detail</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+						<div class="menu-icon">
+							<ul>
+								<li class="header-search"><a href="javascript:void(0)"><img src="images/search.png" class="transition" alt="Search Icon"></a></li>
+								<li class="admin-user"><a href="login.html"><img src="images/user.png" class="transition" alt="User Icon"></a></li>
+								<li class="cart">
+									<a href="javascript:void(0)" class="cart-link"><img src="images/cart.png" class="transition" alt="Cart Icon"><span class="count">0</span></a>
+									<div class="cart-menu">
+										<ul class="cart-listing">
+											<li>
+												<div class="item-content">
+													<a href="shop-detail.html" class="item-img"><img src="images/recipe-2.jpg" alt="Item Image" class="transition"></a>
+													<div class="item-text">
+														<a href="shop-detail.html" class="item-title">Fast Platter</a>
+														<span class="sprice">$66.70</span>
+														<div class="quantity">
+															<label>Qty:</label>
+															<input type="number" name="quantity" class="form-control" value="1" min="1" max="10">
+														</div>
+													</div>
+												</div>
+												<a href="#" class="remove-item">×</a>
+											</li>
+											<li>
+												<div class="item-content">
+													<a href="shop-detail.html" class="item-img"><img src="images/recipe-3.jpg" alt="Item Image" class="transition"></a>
+													<div class="item-text">
+														<a href="shop-detail.html" class="item-title">Special Poha</a>
+														<span class="sprice">$65.77</span>
+														<div class="quantity">
+															<label>Qty:</label>
+															<input type="number" name="quantity" class="form-control" value="1" min="1" max="10">
+														</div>
+													</div>
+												</div>
+												<a href="#" class="remove-item">×</a>
+											</li>
+											<li>
+												<div class="item-content">
+													<a href="shop-detail.html" class="item-img"><img src="images/recipe-4.jpg" alt="Item Image" class="transition"></a>
+													<div class="item-text">
+														<a href="shop-detail.html" class="item-title">Adana Kabab</a>
+														<span class="sprice">$75.88</span>
+														<div class="quantity">
+															<label>Qty:</label>
+															<input type="number" name="quantity" class="form-control" value="1" min="1" max="10">
+														</div>
+													</div>
+												</div>
+												<a href="#" class="remove-item">×</a>
+											</li>
+										</ul>
+										<div class="sub-total">
+											<strong>Subtotal:</strong> <span class="sprice">$66.70</span>
+										</div>
+										<div class="cart-button">
+											<ul>
+												<li><a href="cart.html" class="button">View Cart</a></li>
+												<li><a href="checkout.html" class="button">Checkout</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="toggle-menu"><span></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search-popup">
+			<div class="search-popup-overlay transition"></div>
+			<div class="search-popup-inner">
+				<div class="container">
+					<div class="search-box">
+						<input type="text" name="search" class="form-control" placeholder="Search Here">
+						<button class="search-icon"><img src="images/search.png" class="transition" alt="Search Icon"></button>
+						<a href="javascript:void(0)" class="close-search">×</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main id="main" class="main">
+
+		<section class="home-banner overflow-hidden">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12">
+						<div class="banner-content">
+							<h1 class="banner-title text-uppercase wow fadeInLeft">We do not <span>cook</span>, we create your emotions!</h1>
+							<div class="banner-des wow fadeInLeft">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed vestibulum sagittis eleifend.</p>
+							</div>
+							<a href="menu.html" class="button wow fadeInLeft">See Our Menu</a>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-12">
+						<div class="banner-img">
+							<img src="images/home-banner.png" alt="Banner Image" class="wow rotate-img">
+						</div>
+					</div>
+				</div>
+				<div class="banner-imge-animation">
+					<div class="top-left-img opcity wow fadeInLeft"><img src="images/home-top-left.png" alt="Animation Image"></div>
+					<div class="top-right-img opcity wow fadeInDown"><img src="images/home-top-right.png" alt="Animation Image"></div>
+					<div class="bottom-right-img opcity wow fadeInUp"><img src="images/home-bottom-right.png" alt="Animation Image"></div>
+					<div class="bottom-left-img wow fadeInLeft"><img src="images/home-bottom-left.png" alt="Animation Image"></div>
+					<div class="top-center-img wow fadeInDown"><img src="images/home-top-center.png" alt="Animation Image"></div>
+					<div class="bottom-right-2-img wow fadeInUp"><img src="images/home-bottom-right-2.png" alt="Animation Image"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about overflow-hidden ptb-100">
+			<div class="container">
+				<div class="about-inner">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-12 order-t-2">
+							<div class="about-img-part wow fadeInLeft">
+								<div class="about-right-img">
+									<img src="images/about-img.jpg" alt="About Image">
+								</div>
+								<div class="about-left-img">
+									<img src="images/about-img-2.jpg" alt="About Image">
+								</div>
+								<div class="about-ring">
+									<img src="images/about-ring.png" alt="About Image">
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-12 order-t-1">
+							<div class="about-content wow fadeInRight">
+								<div class="section-headding">
+									<span class="sub-title text-uppercase">Our Story</span>
+									<h2>About Us</h2>
+								</div>
+								<div class="pb-35">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+									<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+								</div>
+								<a href="about-us.html" class="button">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="top-recipes bg-grey ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="section-headding text-center pb-50">
+							<span class="sub-title text-uppercase wow fadeInUp">Top Recipes</span>
+							<h2 class="wow fadeInUp">Our Special Dish</h2>
+						</div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12 wow fadeInUp">
+						<div class="top-recipes-slider owl-carousel">
+							<div class="recipe-slide">
+								<div class="recipe-img overflow-hidden">
+									<a href="shop-detail.html"><img src="images/recipe-1.jpg" class="transition" alt="Recipe Image"></a>
+									<div class="product-hover">
+										<a href="javascript:void(0)" class="button">Add to cart</a>
+									</div>
+								</div>
+								<div class="recipe-content">
+									<h6 class="recipe-title"><a href="shop-detail.html">Fast Platter</a></h6>
+									<p>A mighty meaty double helping of all the reasons you love</p>
+									<p class="price">$66.70</p>
+								</div>
+							</div>
+							<div class="recipe-slide">
+								<div class="recipe-img overflow-hidden">
+									<a href="shop-detail.html"><img src="images/recipe-2.jpg" class="transition" alt="Recipe Image"></a>
+									<div class="product-hover">
+										<a href="javascript:void(0)" class="button">Add to cart</a>
+									</div>
+								</div>
+								<div class="recipe-content">
+									<h6 class="recipe-title"><a href="shop-detail.html">Fried Drumstick</a></h6>
+									<p>A mighty meaty double helping of all the reasons you love</p>
+									<p class="price">$65.77</p>
+								</div>
+							</div>
+							<div class="recipe-slide">
+								<div class="recipe-img overflow-hidden">
+									<a href="shop-detail.html"><img src="images/recipe-3.jpg" class="transition" alt="Recipe Image"></a>
+									<div class="product-hover">
+										<a href="javascript:void(0)" class="button">Add to cart</a>
+									</div>
+								</div>
+								<div class="recipe-content">
+									<h6 class="recipe-title"><a href="shop-detail.html">Special Poha</a></h6>
+									<p>A mighty meaty double helping of all the reasons you love</p>
+									<p class="price">$75.88</p>
+								</div>
+							</div>
+							<div class="recipe-slide">
+								<div class="recipe-img overflow-hidden">
+									<a href="shop-detail.html"><img src="images/recipe-4.jpg" class="transition" alt="Recipe Image"></a>
+									<div class="product-hover">
+										<a href="javascript:void(0)" class="button">Add to cart</a>
+									</div>
+								</div>
+								<div class="recipe-content">
+									<h6 class="recipe-title"><a href="shop-detail.html">Adana Kabab</a></h6>
+									<p>A mighty meaty double helping of all the reasons you love</p>
+									<p class="price">$26.20</p>
+								</div>
+							</div>
+							<div class="recipe-slide">
+								<div class="recipe-img overflow-hidden">
+									<a href="shop-detail.html"><img src="images/recipe-3.jpg" class="transition" alt="Recipe Image"></a>
+									<div class="product-hover">
+										<a href="javascript:void(0)" class="button">Add to cart</a>
+									</div>
+								</div>
+								<div class="recipe-content">
+									<h6 class="recipe-title"><a href="shop-detail.html">Special Poha</a></h6>
+									<p>A mighty meaty double helping of all the reasons you love</p>
+									<p class="price">$66.70</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12 wow fadeInUp">
+						<div class="text-center">
+							<a href="menu.html" class="button">View Menu</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="service-part overflow-hidden ptb-100">
+			<div class="container">
+				<div class="service-inner">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-12 wow fadeInLeft">
+							<div class="section-headding pb-35">
+								<span class="sub-title text-uppercase">Our Services</span>
+								<h2>As Fast As Than You Expect</h2>
+							</div>
+							<div class="row">
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="service-box">
+										<img src="images/Fast-Delivery.png" class="service-img" alt="Fast Delivery">
+										<h5 class="service-title">Fast Delivery</h5>
+										<p class="service-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</p>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="service-box">
+										<img src="images/Limitless-Order.png" class="service-img" alt="Limitless Order">
+										<h5 class="service-title">Limitless Order</h5>
+										<p class="service-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</p>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="service-box">
+										<img src="images/Premium-Quality.png" class="service-img" alt="Premium Quality">
+										<h5 class="service-title">Premium Quality</h5>
+										<p class="service-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</p>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="service-box">
+										<img src="images/Always-Fresh.png" class="service-img" alt="Always Fresh">
+										<h5 class="service-title">Always Fresh</h5>
+										<p class="service-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-12 wow fadeInRight">
+							<div class="service-imgs">
+								<div class="service-main-img">
+									<img src="images/service-1.jpg" alt="Service Image">
+									<div class="years-experience text-center">
+										<h3 class="year-count">10 +</h3>
+										<p class="year-text">Years Experience</p>
+									</div>
+								</div>
+								<div class="service-img-2">
+									<img src="images/service-2.jpg" alt="Service Image">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="testimonial bg-grey ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="section-headding text-center pb-50">
+							<span class="sub-title text-uppercase wow fadeInUp">Testimonial</span>
+							<h2 class="wow fadeInUp">What Our Clients Say? </h2>
+						</div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12 wow fadeInUp">
+						<div class="testimonial-slider owl-carousel">
+							<div  class="testimonial-box text-center">
+								<div class="testimonial-user-img">
+									<img src="images/Nina-Margaret.jpg" alt="Testimonial User">
+								</div>
+								<div class="testimonial-content">
+									<h6 class="testimonial-title">Nina Margaret</h6>
+									<p class="testimonial-desc">“Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, elementum vel, cursus, elit.”</p>
+								</div>
+								<div class="testimonial-ratting">
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div  class="testimonial-box text-center">
+								<div class="testimonial-user-img">
+									<img src="images/John-Anderson.jpg" alt="Testimonial User">
+								</div>
+								<div class="testimonial-content">
+									<h6 class="testimonial-title">John Anderson</h6>
+									<p class="testimonial-desc">“Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, elementum vel, cursus, elit.”</p>
+								</div>
+								<div class="testimonial-ratting">
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div  class="testimonial-box text-center">
+								<div class="testimonial-user-img">
+									<img src="images/Ronald-Astrone.jpg" alt="Testimonial User">
+								</div>
+								<div class="testimonial-content">
+									<h6 class="testimonial-title">Ronald Astrone</h6>
+									<p class="testimonial-desc">“Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, elementum vel, cursus, elit.”</p>
+								</div>
+								<div class="testimonial-ratting">
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div  class="testimonial-box text-center">
+								<div class="testimonial-user-img">
+									<img src="images/John-Anderson.jpg" alt="Testimonial User">
+								</div>
+								<div class="testimonial-content">
+									<h6 class="testimonial-title">John Anderson</h6>
+									<p class="testimonial-desc">“Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, elementum vel, cursus, elit.”</p>
+								</div>
+								<div class="testimonial-ratting">
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="quick-reservation overflow-hidden ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 col-md-12 wow fadeInLeft reservation-main">
+						<div class="reservation">
+							<div class="section-headding pb-35">
+								<span class="sub-title text-uppercase">Book A Table</span>
+								<h2>Quick Reservation</h2>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-xl-6 col-lg-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="name" class="form-control" placeholder="Name*" required="">
+										</div>
+									</div>
+									<div class="col-xl-6 col-lg-6 col-md-6">
+										<div class="form-group">
+											<input type="email" name="email" class="form-control" placeholder="Email*" required="">
+										</div>
+									</div>
+									<div class="col-xl-6 col-lg-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="phone" class="form-control" placeholder="Phone*" required="">
+										</div>
+									</div>
+									<div class="col-xl-6 col-lg-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="time" class="form-control" placeholder="Time*" required="">
+										</div>
+									</div>
+									<div class="col-xl-6 col-lg-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="date" class="form-control" placeholder="Date*" required="">
+										</div>
+									</div>
+									<div class="col-xl-6 col-lg-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="guest" class="form-control" placeholder="Guest*" required="">
+										</div>
+									</div>
+									<div class="col-xl-12 col-lg-12 col-md-12">
+										<button class="button">Book Now</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-12 wow fadeInRight">
+						<div class="delivery">
+							<div class="section-headding pb-35">
+								<span class="sub-title text-uppercase">We Guarantee</span>
+								<h2>30 Minute Delivery</h2>
+							</div>
+							<div class="delivery-content">
+								<div class="delivery-desc">
+									<p>If you’re having a meeting, working late at night and need an extra push.</p>
+								</div>
+								<div class="delivery-img">
+									<div class="bike">
+										<div class="bike-scroll"></div>
+										<img src="images/bike.png" alt="bike">
+									</div>
+									<div class="road-line">
+										<img src="images/road.png" alt="Road">
+									</div>
+									<div class="delivery-location">
+										<img src="images/delivery-location.png" alt="Location">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="instagram pb-100 wow fadeInUp">
+			<div class="instagram-slider owl-carousel">
+				<div class="instagram-item">
+					<a href="images/instagram-1.jpg" data-fancybox="images">
+						<img src="images/instagram-1.jpg" alt="Instagram">
+						<span class="hover-instagram">Pizza</span>
+					</a>
+				</div>
+				<div class="instagram-item">
+					<a href="images/instagram-2.jpg" data-fancybox="images">
+						<img src="images/instagram-2.jpg" alt="Instagram">
+						<span class="hover-instagram">Rice</span>
+					</a>
+				</div>
+				<div class="instagram-item">
+					<a href="images/instagram-3.jpg" data-fancybox="images">
+						<img src="images/instagram-3.jpg" alt="Instagram">
+						<span class="hover-instagram">Burger</span>
+					</a>
+				</div>
+				<div class="instagram-item">
+					<a href="images/instagram-4.jpg" data-fancybox="images">
+						<img src="images/instagram-4.jpg" alt="Instagram">
+						<span class="hover-instagram">Fast Platter</span>
+					</a>
+				</div>
+				<div class="instagram-item">
+					<a href="images/instagram-5.jpg" data-fancybox="images">
+						<img src="images/instagram-5.jpg" alt="Instagram">
+						<span class="hover-instagram">Veg Sandwich</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<section class="our-team pb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="section-headding text-center pb-50">
+							<span class="sub-title text-uppercase wow fadeInUp">Our Team</span>
+							<h2 class="wow fadeInUp">Meet Our Chef</h2>
+						</div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12 wow fadeInUp">
+						<div class="team-slider owl-carousel">
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-1.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Oscar Freeman</a></h6>
+									<span class="memmber-occ">Deserts Specialist</span>
+								</div>
+							</div>
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-2.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Paul Trueman</a></h6>
+									<span class="memmber-occ">Senior Chef</span>
+								</div>
+							</div>
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-3.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Nina Margaret</a></h6>
+									<span class="memmber-occ">Coffee Expert</span>
+								</div>
+							</div>
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-4.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Emma Newman</a></h6>
+									<span class="memmber-occ">Junior Assistant</span>
+								</div>
+							</div>
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-2.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Paul Trueman</a></h6>
+									<span class="memmber-occ">Senior Chef</span>
+								</div>
+							</div>
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-3.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Nina Margaret</a></h6>
+									<span class="memmber-occ">Coffee Expert</span>
+								</div>
+							</div>
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-4.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Emma Newman</a></h6>
+									<span class="memmber-occ">Junior Assistant</span>
+								</div>
+							</div>
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-4.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Emma Newman</a></h6>
+									<span class="memmber-occ">Junior Assistant</span>
+								</div>
+							</div>
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-2.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Paul Trueman</a></h6>
+									<span class="memmber-occ">Senior Chef</span>
+								</div>
+							</div>
+							<div class="team-box">
+								<div class="team-img">
+									<a href="team.html"><img src="images/memmber-3.jpg" alt="Memmber Image"></a>
+									<div class="team-img-hover">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+											<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-desc">
+									<h6 class="memmber-name"><a href="team.html">Nina Margaret</a></h6>
+									<span class="memmber-occ">Coffee Expert</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="full-width-image right-image  overflow-hidden row bg-grey">
+			<div class="col-xl-6 col-lg-6 col-md-12 full-content-part ptb-100 wow fadeInLeft">
+				<div class="left-container">
+					<div class="section-headding">
+						<span class="sub-title text-uppercase">our mobile app</span>
+						<h2>Mobile App Made Simple</h2>
+					</div>
+					<div class="full-width-content">
+						<p>Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Aenean nec eros. Vestibu­lum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+						<p>This burger’s name explains itself. Of course, you can also top it with crisp lettuce, tomatoes, ketchup, barbecue sauce and anything else.</p>
+					</div>
+					<div class="app-button">
+						<ul>
+							<li><a href="#"><img src="images/google-play.png" alt="Google Play"></a></li>
+							<li><a href="#"><img src="images/app-store.png" alt="App Store"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-12 full-image-part wow fadeInRight">
+				<div class="full-image-box">
+					<img src="images/app-img.jpg" alt="Mobile App">
+				</div>
+			</div>
+		</section>
+
+		<section class="blog-part ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="section-headding text-center pb-50">
+							<span class="sub-title text-uppercase wow fadeInUp">Our Blog</span>
+							<h2 class="wow fadeInUp">Our Latest News</h2>
+						</div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12 wow fadeInUp">
+						<div class="blog-slider owl-carousel">
+							<div class="blog-box">
+								<div class="blog-img">
+									<a href="blog-detail.html">
+										<img src="images/blog-1.jpg" alt="Blog Image">
+									</a>
+								</div>
+								<div class="blog-content">
+									<ul class="date">
+										<li>12 June 2021</li>
+										<li>By Jones</li>
+									</ul>
+									<h6 class="blog-title"><a href="blog-detail.html">How To Cook The Spicy Chinese Noodle For Cold Weather</a></h6>
+									<div class="blog-desc">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sunt explicabo.</p>
+									</div>
+									<a href="blog-detail.html" class="read-more text-uppercase">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+							</div>
+							<div class="blog-box">
+								<div class="blog-img">
+									<a href="blog-detail.html">
+										<img src="images/blog-2.jpg" alt="Blog Image">
+									</a>
+								</div>
+								<div class="blog-content">
+									<ul class="date">
+										<li>12 June 2021</li>
+										<li>By Jones</li>
+									</ul>
+									<h6 class="blog-title"><a href="blog-detail.html">How To Cook The Spicy Chinese Noodle For Cold Weather</a></h6>
+									<div class="blog-desc">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sunt explicabo.</p>
+									</div>
+									<a href="blog-detail.html" class="read-more text-uppercase">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+							</div>
+							<div class="blog-box">
+								<div class="blog-img">
+									<a href="blog-detail.html">
+										<img src="images/blog-3.jpg" alt="Blog Image">
+									</a>
+								</div>
+								<div class="blog-content">
+									<ul class="date">
+										<li>12 June 2021</li>
+										<li>By Jones</li>
+									</ul>
+									<h6 class="blog-title"><a href="blog-detail.html">How To Cook The Spicy Chinese Noodle For Cold Weather</a></h6>
+									<div class="blog-desc">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sunt explicabo.</p>
+									</div>
+									<a href="blog-detail.html" class="read-more text-uppercase">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+							</div>
+							<div class="blog-box">
+								<div class="blog-img">
+									<a href="blog-detail.html">
+										<img src="images/blog-2.jpg" alt="Blog Image">
+									</a>
+								</div>
+								<div class="blog-content">
+									<ul class="date">
+										<li>12 June 2021</li>
+										<li>By Jones</li>
+									</ul>
+									<h6 class="blog-title"><a href="blog-detail.html">How To Cook The Spicy Chinese Noodle For Cold Weather</a></h6>
+									<div class="blog-desc">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sunt explicabo.</p>
+									</div>
+									<a href="blog-detail.html" class="read-more text-uppercase">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer wow fadeInUp">
+		<div class="container">
+			<div class="footer-inner ptb-100">
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-6 order-t-1">
+						<div class="footer-box-logo">
+							<a href="index.html" class="footer-logo"><img src="images/footer-logo.png" alt="Brand Logo"></a>
+							<p>Lectus magna fringilla urna row porttitor rhoncus. Velit sed se ullamcorper morbio</p>
+							<ul class="social">
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 order-t-3">
+						<div class="footer-box">
+							<h6 class="footer-title text-uppercase">Opening Hours</h6>
+							<ul>
+								<li>Monday - Friday</li>
+								<li>10.00 AM - 11.00 PM</li>
+							</ul>
+						</div>
+						<div class="footer-box">
+							<h6 class="footer-title text-uppercase">Phone</h6>
+							<ul>
+								<li><a href="telto:+68123456789">(+68) 123 456 789</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 order-t-4">
+						<div class="footer-box">
+							<h6 class="footer-title text-uppercase">Address</h6>
+							<ul>
+								<li>570 8th Ave, New York, NY 10018 United States</li>
+							</ul>
+						</div>
+						<div class="footer-box">
+							<h6 class="footer-title text-uppercase">Email</h6>
+							<ul>
+								<li><a href="mailto:info@example.com">info@example.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 order-t-2">
+						<div class="footer-box newsletter-box">
+							<h6 class="footer-title text-uppercase">Newsletter</h6>
+							<form>
+								<div class="form-group">
+									<input type="text" name="text" class="form-control" placeholder="Email Address" required>
+								</div>
+								<button class="button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="text-center">
+					<p>Restaurano all Rights Reserved. Designed By <a href="#">TemplatesCoder.com</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://kit.fontawesome.com/b90099deb6.js" crossorigin="anonymous"></script>
+</body>
+</html>
